@@ -1,7 +1,9 @@
 {
   "scripts": {
     "now-build": "next build",
-    "dev": "next dev"
+    "dev": "next dev",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "author": "Olli Vanhoja",
   "license": "MIT",
@@ -12,6 +14,8 @@
     "next": "8.0.0-canary.7",
     "next-cookies": "1.0.4",
     "react": "16.7.0",
-    "react-dom": "16.7.0"
-  }
+    "react-dom": "16.7.0",
+    "snyk": "^1.189.0"
+  },
+  "snyk": true
 }
