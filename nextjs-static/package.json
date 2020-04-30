@@ -1,11 +1,15 @@
 {
   "scripts": {
     "now-build": "next build && next export -o dist",
-    "now-dev": "next -p $PORT"
+    "now-dev": "next -p $PORT",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
     "next": "latest",
     "react": "latest",
-    "react-dom": "latest"
-  }
+    "react-dom": "latest",
+    "snyk": "^1.316.1"
+  },
+  "snyk": true
 }
