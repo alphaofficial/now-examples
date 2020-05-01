@@ -11,6 +11,12 @@
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "serverless-mysql": "^1.2.1",
-    "sql-template-strings": "^2.2.2"
-  }
+    "sql-template-strings": "^2.2.2",
+    "snyk": "^1.316.1"
+  },
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
